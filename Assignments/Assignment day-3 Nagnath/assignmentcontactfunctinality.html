@@ -1,0 +1,19 @@
+<!--
+  @description       : contact functionality using wire method
+  @author            : Nagnath Kalburge
+  @group             : 
+  @last modified on  : 09-11-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="ApexWireMethodWithParams" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <lightning-input type="search" onchange={handleKeyChange} class="slds-m-bottom_small" label="Search" value={searchKey}></lightning-input>
+            <template if:true={contacts.data}>
+                <template for:each={contacts.data} for:item="contact">
+                    <p key={contact.Id}>{contact.Name}</p>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>
