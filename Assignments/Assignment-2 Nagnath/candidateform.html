@@ -1,0 +1,37 @@
+<!--
+  @description       : 
+  @author            : Nagnath Kalburge
+  @group             : 
+  @last modified on  : 09-11-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+  <lightning-card title="Candidate Form">
+    <div class="slds-m-around_medium">
+      <lightning-input name="firstName" label="First Name" onchange={handleChange}></lightning-input>
+      <lightning-input name="lastName" label="Last Name" onchange={handleChange}></lightning-input>
+      <lightning-input type="date" value={dob} name="DOB" label="Date Of Birth" onchange={handleonchange}></lightning-input>>     
+      <p class="slds-m-top_medium">Full Name: {uppercasedFullName}</p>
+
+      <lightning-input name="Age" label="Age" value={age} disabled="true"></lightning-input>
+
+      <template if:true={ageAbove60}>
+          <lightning-input-rich-text
+                      value="assistance required"
+                      disabled-categories="FORMAT_TEXT">
+
+          </lightning-input-rich-text>
+      </template>
+      <template if:true={ageBelow18}>
+       <lightning-formatted-email>
+           Enter your Email Id:
+       </lightning-formatted-email>>
+   </template>
+      <lightning-input type="checkbox" name="gender" label="Male" disabled={isMale} onchange={handleChangeForMale}></lightning-input>
+
+      <lightning-input type="checkbox" name="gender" label="Female" disabled={isFemale} onchange={handleChangeForFemale}></lightning-input>
+
+  </div>
+<lightning-button label="save"></lightning-button>
+  </lightning-card>
+</template>
