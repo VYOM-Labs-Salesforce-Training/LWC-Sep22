@@ -1,0 +1,18 @@
+<!--
+  @description       : To display lead information
+  @author            : Nagnath Kalburge
+  @group             : 
+  @last modified on  : 09-12-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="Lead Information" icon-name="custom:custom63">
+        <div class="slds-m-around_medium">
+            <template if:true={Leads.data}>
+                <template for:each={Leads.data} for:item="Lead">
+                    <p key={Lead.Id}>{Lead.Name}</p>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>
