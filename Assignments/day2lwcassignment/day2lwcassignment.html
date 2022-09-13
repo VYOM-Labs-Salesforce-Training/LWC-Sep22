@@ -1,0 +1,40 @@
+<!--
+ * @ Author: Prajakta kulkarni
+ * @ Create Time: 2022-09-13 10:37:42
+ * @ Modified by: Your name
+ * @ Modified time: 2022-09-13 10:40:57
+ * @ Description:Create a form page considering Heading of page should be ‘Candidate Form’ below lightning-input fields
+
+ -->
+
+<template>
+   <lightning-card  title="Candidate Form" icon-name="standard:event" alternative-text="Event">
+ 
+   <div class="slds-m-around_medium">
+       <lightning-input name="firstName" label="First Name" onchange={handleChange}></lightning-input>
+       <lightning-input name="lastName" label="Last Name" onchange={handleChange}></lightning-input>
+       <lightning-input type="date" value={dob} name="DOB" label="Date Of Birth" onchange={handleonchange}></lightning-input>>     
+       <p class="slds-m-top_medium">Uppercased Full Name: {uppercasedFullName}</p>
+ 
+       <lightning-input name="Age" label="Age" value={age} disabled="true"></lightning-input>
+ 
+       <template if:true={ageAbove60}>
+           <lightning-input-rich-text
+                       value="assistance required"
+                       disabled-categories="FORMAT_TEXT">
+  
+           </lightning-input-rich-text>
+       </template>
+       <template if:true={ageBelow18}>
+        <lightning-formatted-email>
+            Enter your Email Id:
+        </lightning-formatted-email>>
+    </template>
+       <lightning-input type="checkbox" name="gender" label="Male" disabled={isMale} onchange={handleChangeForMale}></lightning-input>
+       
+       <lightning-input type="checkbox" name="gender" label="Female" disabled={isFemale} onchange={handleChangeForFemale}></lightning-input>
+                  
+   </div>
+ <lightning-button label="save"></lightning-button>
+   </lightning-card>
+</template>
