@@ -1,20 +1,20 @@
 <!--
  * @ Author: Prajakta kulkarni
- * @ Create Time: 2022-09-13 10:37:43
+ * @ Create Time: 2022-09-15 12:22:13
  * @ Modified by: Your name
- * @ Modified time: 2022-09-13 10:51:34
- * @ Description:Create a form page considering Heading of page should be ‘Candidate Form’ below lightning-input fields
-
+ * @ Modified time: 2022-09-15 12:54:05
+ * @ Description:
  -->
 
 <?xml version="1.0" encoding="UTF-8"?>
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>55.0</apiVersion>
     <isExposed>true</isExposed>
-     <targets>
+<targets>
 
         <target>lightning__AppPage</target>
         <target>lightning__RecordPage</target>
         <target>lightning__HomePage</target>
-    </targets>
+</targets>
+
 </LightningComponentBundle>
