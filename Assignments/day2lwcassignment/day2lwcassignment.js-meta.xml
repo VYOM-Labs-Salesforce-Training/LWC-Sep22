@@ -1,20 +1,20 @@
 <!--
  * @ Author: Prajakta kulkarni
- * @ Create Time: 2022-09-05 18:39:26
+ * @ Create Time: 2022-09-13 10:37:43
  * @ Modified by: Your name
- * @ Modified time: 2022-09-13 10:33:49
- * @ Description:Vyom labs’ is setting up an app which can display sales information for its Sales executive. 
+ * @ Modified time: 2022-09-13 10:41:57
+ * @ Description:Create a form page considering Heading of page should be ‘Candidate Form’ below lightning-input fields
+
  -->
 
 <?xml version="1.0" encoding="UTF-8"?>
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>55.0</apiVersion>
     <isExposed>true</isExposed>
-    <targets>
+     <targets>
 
         <target>lightning__AppPage</target>
         <target>lightning__RecordPage</target>
         <target>lightning__HomePage</target>
     </targets>
-
 </LightningComponentBundle>
