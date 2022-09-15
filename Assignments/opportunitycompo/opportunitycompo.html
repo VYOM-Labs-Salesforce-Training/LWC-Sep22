@@ -1,0 +1,27 @@
+<!--
+ * @ Author: Prajakta kulkarni
+ * @ Create Time: 2022-09-15 16:57:55
+ * @ Modified by: Your name
+ * @ Modified time: 2022-09-15 19:43:09
+ * @ Description: Create a search Opportunity functionality 
+
+ -->
+
+<template>
+    <lightning-card 
+    title="Opportunity details">
+    <lightning-button  label="Display opportunity" onclick={handleopportunity}>
+
+    </lightning-button>
+    <template if:true={oppor}>
+        <template for:each={oppor} for:item ="op">
+            <p key ={op.id}>
+                {op.id}
+                {op.name}
+            </p>
+        </template>
+
+
+    </template>
+</lightning-card>
+</template>

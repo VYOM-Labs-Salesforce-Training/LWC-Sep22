@@ -1,0 +1,14 @@
+<!--
+ * @ Author: Prajakta kulkarni
+ * @ Create Time: 2022-09-15 16:53:32
+ * @ Modified by: Your name
+ * @ Modified time: 2022-09-15 19:43:19
+ * @ Description: Create a search Opportunity functionality 
+
+ -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ApexClass xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <status>Active</status>
+</ApexClass>
