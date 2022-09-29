@@ -1,0 +1,14 @@
+<!--create visual force page to display all details of custom object-->
+
+<apex:page controller="customobjectcontroller">
+    <apex:form >
+        <apex:pageBlock title="pageInfo">
+            <apex:pageBlockTable value="{!Bankdetails}" var="l">
+                <apex:column value="{!l.id}"/>
+                <apex:column value="{!l.Name}"/>
+               
+                 <apex:column value="{!l.Email__c}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>>
+</apex:page>

@@ -1,0 +1,28 @@
+<apex:page >
+    <apex:form >
+    	<apex:pageBlock title="Contact Form">
+            <apex:pageMessages />
+        	
+        	
+        	<apex:pageBlockSection columns="1"> 
+            	
+				<apex:inputText id="Firstname" required="true" html-placeholder="Name"> </apex:inputText>   
+                  
+               	<apex:inputText id="Email" required="true" html-placeholder="nagnath.kalburge@gmail.com" > </apex:inputText>
+               	<apex:inputText id="phone" html-placeholder="Phone Number"/>
+                
+                <apex:inputText id="Subject" html-placeholder="Subject"/>
+                
+               <apex:inputTextarea id="Message" html-placeholder="Message"/>
+                 
+
+            </apex:pageBlockSection>
+           
+            <apex:commandButton action="{! save }" value="Save" />
+        
+            
+        </apex:pageBlock>
+   
+    </apex:form>
+
+</apex:page>

@@ -1,0 +1,10 @@
+<!--create a visual force page of action poller for timer based application-->
+<apex:page controller="actionpollar">
+    <apex:form >
+    <apex:pageBlock title="Action Pollar For Time Based" id="refreshap">
+        <apex:actionPoller action="{!pollar}" reRender="refreshap" interval="5">
+        {!count} seconds for actionpollar!!
+        </apex:actionPoller>
+    </apex:pageBlock>
+        </apex:form>
+</apex:page>

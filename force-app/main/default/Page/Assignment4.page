@@ -1,0 +1,17 @@
+<apex:page showHeader="false" sidebar="false" controller="buttonclickaccountinformation" >
+    
+    <!--create a VF page on click of a button display account object details  -->
+    
+    <apex:form >
+     <apex:pageBlock >
+          <apex:commandButton value="Account Record" action="{!Onclick}"></apex:commandButton>
+      	<apex:pageBlockTable value="{!accounts}" var="a">
+                <apex:column value="{!a.Id}"/>
+                <apex:column value="{!a.Name}"/>
+                <apex:column value="{!a.Type}"/>
+                <apex:column value="{!a.Industry}"/>
+                <apex:column value="{!a.AnnualRevenue}"/>
+         </apex:pageBlockTable>
+            </apex:pageBlock>
+    </apex:form>
+</apex:page>

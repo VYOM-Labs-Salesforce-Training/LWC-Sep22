@@ -1,0 +1,19 @@
+<!--mouse event display messages with application status?-->
+<apex:page controller="ass15">
+    <apex:form >
+        <apex:outputPanel id="counter">
+            <apex:outputText value="Click Me: {!count}"></apex:outputText>
+            <apex:actionSupport event="onmouseover"
+                                action="{!incrementCounter}"
+                                reRender="counter" status="counterStatus"/>
+           
+        </apex:outputPanel>
+        <apex:actionStatus id="counterStatus"
+                           startText="(incrementCounter...)"
+                           stopText="(done)"/>
+       
+        <apex:pageBlock >
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

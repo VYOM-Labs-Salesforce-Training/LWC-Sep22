@@ -1,0 +1,19 @@
+<!--create visual force page for the custom object through controller class and display through pageblocktable,datatable.-->
+<apex:page Controller="Customobjectpageblock" sidebar="false" >
+  <apex:pageBlock >
+            	<apex:pageBlockSection title="Page block table" collapsible="false">
+                <apex:pageBlockTable value="{!creditCard}" var="cc">
+                    <apex:column value="{!cc.Name}"/>
+                    <apex:column value="{!cc.Bank__c}"/>
+             
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        <apex:pageBlockSection title="Data table" collapsible="false">
+            <apex:dataTable value="{!creditCard}" var="c" headerClass="theHead" cellpadding="10px" rowClasses="odd,even">
+                <apex:column value="{!c.Name}"/>
+                <apex:column value="{!c.Bank__c}"/>
+                 
+            </apex:dataTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>  
+</apex:page>

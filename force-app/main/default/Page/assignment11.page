@@ -1,0 +1,25 @@
+<apex:page standardController="bank__c"  sidebar="false">
+    <apex:form >
+        <apex:pageBlock title="Bank Details!!">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save Case" action="{!save}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Bank Information1" columns="2" collapsible="false">
+                <apex:inputField value="{!bank__c.Name}"/>
+               <apex:inputField value="{!bank__c.Email__c}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Bank Information2" columns="4" collapsible="false">
+                
+                     BankCode:<apex:inputText id="A301"/> 
+			 
+              <apex:outputLabel >Select country:</apex:outputLabel>
+                    <apex:selectList multiselect="false" size="1">
+                        
+                        <apex:selectOption itemValue="India" itemLabel="India"/>
+                        <apex:selectOption itemValue="USA" itemLabel="USA"/>
+                        <apex:selectOption itemValue="Russia" itemLabel="Russia"/>
+                        </apex:selectList>   
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

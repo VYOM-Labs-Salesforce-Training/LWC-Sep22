@@ -1,0 +1,13 @@
+<!--.create a visual force page to display contact object and display with pagination  -->
+<apex:page standardController="Contact" sidebar="false" recordSetVar="contacts">
+   <apex:pageBlock >
+       <apex:form >
+           <apex:pageBlockTable value="{!contacts}" var="c">
+               <apex:column value="{!c.lastName}"/>
+               <apex:column value="{!c.Level__c}"/>
+           </apex:pageBlockTable>
+           <apex:commandLink action="{!previous}">Previous</apex:commandLink>
+             <apex:commandLink action="{!next}">Next</apex:commandLink>
+       </apex:form>
+    </apex:pageBlock>
+</apex:page>

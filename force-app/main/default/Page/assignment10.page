@@ -1,0 +1,18 @@
+<!--create visual force page to override case object with your custom fields like status[picklist], date and 2 standard fields.-->
+<apex:page standardController="Case" sidebar="false">
+    <apex:form >
+        <apex:pageBlock title="Case Details!!">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save Case" action="{!save}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Case Information1" columns="2" collapsible="false">
+               <apex:inputField value="{!Case.CreatedDate}"/>
+                <apex:inputField value="{!Case.Type}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Case Information1" columns="2" collapsible="false">
+               <apex:inputField value="{!Case.Product__c}"/>
+                <apex:inputField value="{!Case.Status}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

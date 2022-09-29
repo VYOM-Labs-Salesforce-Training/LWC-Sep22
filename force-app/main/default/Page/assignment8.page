@@ -1,0 +1,11 @@
+<!--create VF page for the custom object through controller class and display using data table-->
+
+<apex:page standardStylesheets="false" showHeader="True" sidebar="false"    
+ standardController="credit_card__c" recordsetVar="creditcard"> 
+     <apex:pageBlock >
+        <apex:pageBlockTable value="{!creditcard}" var="c">
+            <apex:column value="{!c.Name}" />
+ 			<apex:column value="{!c.Bank__c}"/>        
+         </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,55 @@
+<apex:page showHeader="true" standardStylesheets="false" sidebar="false" docType="HTML-5.0" controller="FormStudent">
+    
+    <!-- create a VF page for student registration form. Insert the records when user click on submit button -->
+    <style>
+     .headbody
+        {
+        font-family: Calibri;
+        font-size: 50px;
+        font-weight: 800;
+        color: blue;
+        text-align: Center;
+        display: block;
+        padding:20px;
+        margin: 0;
+      }
+        .buttonbody{
+        text-align: Right;
+        }
+    </style>
+    
+
+
+    <apex:form >
+       <center><h1 Class="headbody">Student Registration Form</h1></center>
+        
+  
+            <table border="1">
+                <center><apex:pageBlock >
+           
+        <apex:pageBlockButtons Location="bottom" dir="RTL" >
+          
+            <apex:commandButton value="Finish"></apex:commandButton>
+      
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection showHeader="True"></apex:pageBlockSection>
+         
+        	<center><apex:pageBlockSection columns="1"> 
+          
+                <center> <apex:inputText label="First name" id="Firstname"> </apex:inputText></center><br/>
+                
+                
+                <apex:inputText label="Last name" id="Lastname"> </apex:inputText><br/> 
+                
+                <apex:inputText label="Email" id="Email"> </apex:inputText><br/>
+                <apex:input type="date" label="DOB" id="DOB" value="{!dob}"></apex:input> <br/> 
+                
+                <apex:inputTextarea label="Communication Address " id="Address"/><br/>
+                <apex:inputText label="LinkedIn Profile URL" id="url"/><br/>
+                   </apex:pageBlockSection></center>
+            </apex:pageBlock>
+                </center>
+        </table>
+   
+    </apex:form>
+</apex:page>

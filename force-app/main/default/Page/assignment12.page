@@ -1,0 +1,31 @@
+<!--create a visual force page of username and password and validate from client side.-->
+<apex:page docType="html-5.0" id="pageid">
+    <script>
+    function validate()
+    {
+        uname=document.getElementById('pageid:formid:pid:pbsid:un').value;
+        pwd=document.getElementById('pageid:formid:pid:pbsid:pw').value;
+        if((uname=='') && (pwd=='')){
+            alert('username and password are not mentioned');
+            }
+
+       else if((uname!='Nagnath') && (pwd!='pune@12345'))
+        {
+            alert('Invalid username and password');
+        }     
+   }
+    </script>
+    <apex:form id="formid">
+      <apex:pageBlock id="pid">
+          <apex:pageBlockButtons location="bottom">
+            <apex:commandButton value="submit" onclick="validate()" />
+             </apex:pageBlockButtons>
+            <apex:pageBlockSection id="pbsid">
+                <apex:outputLabel >Username:</apex:outputLabel>
+        		<apex:inputText id="un"/>
+                <apex:outputLabel >Password:</apex:outputLabel>
+        		<apex:inputSecret id="pw" />  
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
