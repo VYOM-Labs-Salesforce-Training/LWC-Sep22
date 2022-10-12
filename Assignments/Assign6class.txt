@@ -1,0 +1,17 @@
+/**
+ * @ Author: Prajakta kulkarni
+ * @ Create Time: 2022-10-12 16:38:11
+ * @ Modified by: Your name
+ * @ Modified time: 2022-10-12 16:43:50
+ * @ Description:Action pollar example
+ */
+
+public class secondexofactionpollar {
+    public integer count{get;set;}
+    public secondexofactionpollar(){
+        count=0;
+    }
+    public void pollar(){
+        count=count+20;
+    }
+}

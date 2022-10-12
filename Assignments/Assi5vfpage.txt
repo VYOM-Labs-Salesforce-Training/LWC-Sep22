@@ -1,0 +1,21 @@
+/**
+ * @ Author: Prajakta kulkarni
+ * @ Create Time: 2022-10-12 16:38:11
+ * @ Modified by: Your name
+ * @ Modified time: 2022-10-12 16:41:09
+ * @ Description:Student object record details
+ */
+
+<apex:page controller="Customobjectdata" >
+    <apex:form >
+        <apex:pageblock title="Display student records">
+            <apex:pageblocktable value="{!stlist}" var="st">
+                <apex:column value="{!st.Roll_No__c}"/>
+                <apex:column value="{!st.User_Name__c}"/>
+           
+            
+            
+            </apex:pageblocktable>.
+        </apex:pageblock>
+    </apex:form>>
+</apex:page>

@@ -1,0 +1,30 @@
+/**
+ * @ Author: Prajakta kulkarni
+ * @ Create Time: 2022-10-12 16:38:11
+ * @ Modified by: Your name
+ * @ Modified time: 2022-10-12 16:43:13
+ * @ Description:Arithmatic operations
+ */
+
+<apex:page controller="Arithmaticvfpage" showHeader="true">
+    <apex:form >
+        <apex:pageblock title="Arithmatic operations">
+            NUMBER 1: <apex:inputText value="{!number1}"/> <br/>
+            <br/>
+            NUMBER 2: <apex:inputText value="{!number2}"/> <br/>
+            <apex:pageBlockButtons location="bottom">
+            
+            <apex:commandButton value="Add" action="{!Addition}"/>
+
+            <apex:commandButton value="Sub" action="{!Substraction}"/>
+            <apex:commandButton value="Multi" action="{!Multiplication}"/>
+            <apex:commandButton value="Divi" action="{!Division}"/>
+                
+            </apex:pageBlockButtons>
+            
+            
+            
+            <br/><b>Result is: <apex:outputText value="{!result}"></apex:outputText></b>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

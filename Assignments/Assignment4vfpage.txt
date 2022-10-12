@@ -1,0 +1,26 @@
+/**
+ * @ Author: Prajakta kulkarni
+ * @ Create Time: 2022-10-12 16:38:11
+ * @ Modified by: Your name
+ * @ Modified time: 2022-10-12 16:46:29
+ * @ Description: Contact form
+ */
+
+<apex:page standardController="contact" showHeader="true">
+    <apex:form >
+        <apex:pageblock title="Contact form">
+            <apex:pageblocksection title="Fill the form">
+             	<apex:inputField value="{!contact.firstname}"/>
+             	<apex:inputField value="{!contact.lastname}"/>
+                
+            </apex:pageblocksection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="save" action="{!save}"/>
+            </apex:pageBlockButtons>>
+            
+            
+            
+        </apex:pageblock>
+    </apex:form>
+                
+</apex:page>

@@ -1,0 +1,24 @@
+/**
+ * @ Author: Prajakta kulkarni
+ * @ Create Time: 2022-10-12 16:38:11
+ * @ Modified by: Your name
+ * @ Modified time: 2022-10-12 16:45:54
+ * @ Description:Contact records
+ */
+
+<apex:page standardController="Contact" showHeader="true" recordsetvar="con" >
+    <apex:form >
+        <apex:pageBlock >
+        <apex:pageBlocktable title="Contact details" value="{!con}" var="c">
+            <apex:column value="{!c.id}"/>
+            <apex:column value="{!c.Lastname}"/>
+            
+        </apex:pageBlocktable>
+            <apex:commandButton value="save" action="{!save}"/><br/>
+            <br/>
+            <apex:commandLink value="previous" action="{!previous}" />
+            <br/>
+            <apex:commandLink value="Next" action="{!next}" />
+            </apex:pageBlock>
+    </apex:form>
+</apex:page>

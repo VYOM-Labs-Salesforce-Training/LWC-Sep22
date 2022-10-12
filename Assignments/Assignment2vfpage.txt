@@ -1,0 +1,33 @@
+/**
+ * @ Author: Prajakta kulkarni
+ * @ Create Time: 2022-10-12 16:38:11
+ * @ Modified by: Your name
+ * @ Modified time: 2022-10-12 16:45:24
+ * @ Description:Account details
+ */
+
+<apex:page standardController="Account">
+    
+    <apex:form >
+        <apex:pageBlock title="Add the details">
+          
+                
+            <h1> Fill the form</h1>
+            
+            <apex:inputField value="{!Account.Name}" /> <br/>
+            <br/>
+            <apex:inputField value="{!Account.Rating}" /><br/>
+            <br/>
+            <apex:inputField value="{!Account.Type}" /><br/>
+            <br/>
+            <apex:inputField value="{!Account.Site}" />
+            
+           
+        </apex:pageBlock>
+        <apex:commandButton value="save" action="{!save}"/>
+       
+        
+        
+        
+    </apex:form>
+</apex:page>

@@ -1,0 +1,16 @@
+/**
+ * @ Author: Your name
+ * @ Create Time: 2022-10-12 16:38:11
+ * @ Modified by: Your name
+ * @ Modified time: 2022-10-12 16:42:41
+ * @ Description: onclick of button display account records
+ */
+
+public class onclickofbuttonacc {
+    public list<account>acclist{get;set;}
+    
+    public void onclick(){
+    acclist=[SELECT id, name FROM account];    
+    }
+    
+}

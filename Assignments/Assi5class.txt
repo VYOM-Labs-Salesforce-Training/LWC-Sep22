@@ -1,0 +1,15 @@
+/**
+ * @ Author: Prajakta kulkarni
+ * @ Create Time: 2022-10-12 16:38:11
+ * @ Modified by: Your name
+ * @ Modified time: 2022-10-12 16:40:39
+ * @ Description: Student records details
+ */
+
+public class Customobjectdata {
+    public list<Student__c>stlist{get;set;}
+    
+    public Customobjectdata(){
+        stlist=[select Roll_No__c,User_Name__c from Student__c];
+    }
+}

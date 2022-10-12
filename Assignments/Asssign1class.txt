@@ -1,0 +1,29 @@
+/**
+ * @ Author: Prajakta kulkarni
+ * @ Create Time: 2022-10-12 16:38:11
+ * @ Modified by: Your name
+ * @ Modified time: 2022-10-12 16:47:06
+ * @ Description:Arithmatic operations
+ */
+
+public class Arithmaticvfpage {
+    public integer number1{get;set;}
+    public integer number2{get;set;}
+    public integer result{get;set;}
+    
+    public void  Addition(){
+        result=number1+number2;
+    }
+    
+    public void  Substraction(){
+        result=number1-number2;
+    }
+    
+    public void  Multiplication(){
+        result=number1*number2;
+    }
+    
+    public void  Division(){
+        result=number1/number2;
+    }
+}

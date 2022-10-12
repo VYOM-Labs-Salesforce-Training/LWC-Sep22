@@ -1,0 +1,23 @@
+/**
+ * @ Author: Prajakta kulkarni
+ * @ Create Time: 2022-10-12 16:38:11
+ * @ Modified by: Your name
+ * @ Modified time: 2022-10-12 16:39:43
+ * @ Description: onclick of button account records should be displayed 
+ */
+
+<apex:page controller="onclickofbuttonacc" showHeader="true">
+    <apex:pageBlock title="Get account records">
+        <apex:form >
+            <apex:pageBlocktable value="{!acclist}" var="ac">
+                <apex:column value="{!ac.id}"/>
+                <apex:column value="{!ac.name}"/>
+                
+                
+            </apex:pageBlocktable>
+            
+                <apex:commandbutton value="{Getrecords}" action="{!onclick}"/>
+            
+        </apex:form>
+    </apex:pageBlock>
+</apex:page>

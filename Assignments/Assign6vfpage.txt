@@ -1,0 +1,18 @@
+/**
+ * @ Author: Prajakta kulkarni
+ * @ Create Time: 2022-10-12 16:38:11
+ * @ Modified by: Your name
+ * @ Modified time: 2022-10-12 16:44:52
+ * @ Description:Second xample of action pollar
+ */
+
+<apex:page controller="secondexofactionpollar">
+    <apex:pageBlock >
+        <apex:form >
+            <apex:pageBlockSection title="Action pollar ex" id="refreshap">
+                <apex:actionPoller action="{!pollar}" rerender="refreshap" interval="5"/>
+                {!count}seconds for action pollar!!!
+            </apex:pageBlockSection>
+        </apex:form>
+    </apex:pageBlock>>
+</apex:page>

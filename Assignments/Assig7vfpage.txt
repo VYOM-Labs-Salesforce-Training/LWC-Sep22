@@ -1,0 +1,16 @@
+/**
+ * @ Author: Prajakta kulkarni
+ * @ Create Time: 2022-10-12 16:38:11
+ * @ Modified by: Your name
+ * @ Modified time: 2022-10-12 16:42:09
+ * @ Description:Actionpollar example
+ */
+
+<apex:page controller="Actionpollarex">
+    <apex:form >
+        <apex:pageblock title="Action pollar demo" id="refreshap">
+            <apex:actionPoller action="{!pollar}" rerender="refreshap" interval="5"/>
+            {!count}seconds for action pollar!!!!
+        </apex:pageblock>
+    </apex:form>>
+</apex:page>
